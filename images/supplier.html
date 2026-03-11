@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Supplier Registration</title>
+    <link rel="stylesheet" href="./supplier.js" />
+    <link rel="stylesheet" href="../supplier.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="border border-1">
+      <h1>Supplier Registration</h1>
+      <p>Please fill out all the required fields to register as a supplier.</p>
+      <div>
+        <h2 id="you">Company Information</h2>
+        <form class="row g-3 needs-validation" novalidate>
+          <div class="col-md-4">
+            <label for="validationCustom01" class="form-label"
+              >Company Name *</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="validationCustom01"
+              placeholder="Nyondo Stock Suppliers"
+              required
+            />
+            <div class="valid-feedback">Section cleared✅</div>
+          </div>
+          <div class="col-md-4">
+            <label for="validationCustom02" class="form-label"
+              >Tax ID/ VAT ID*</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="validationCustom02"
+              placeholder="Enter ID"
+              required
+            />
+            <div class="valid-feedback">Section cleared✅</div>
+          </div>
+          <div class="col-md-4">
+            <label for="validationCustom02" class="form-label"
+              >Year of Establishmnet*</label
+            >
+            <input
+              type="year"
+              class="form-control"
+              id="validationCustom02"
+              placeholder="2000"
+              required
+            />
+            <div class="valid-feedback">Section cleared✅</div>
+          </div>
+          <div class="col-md-4">
+            <label for="validationCustomUsername" class="form-label"
+              >Business Registration Number*</label
+            >
+            <div class="input-group has-validation">
+              <span class="input-group-text" id="inputGroupPrepend">U</span>
+              <input
+                type="number"
+                class="form-control"
+                id="validationCustomUsername"
+                aria-describedby="inputGroupPrepend"
+                placeholder="568765"
+                required
+              />
+              <div class="invalid-feedback">Please enter valid number</div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="validationCustom03" class="form-label"
+              >Company Address*</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="validationCustom03"
+              required
+            />
+            <div class="invalid-feedback">Please provide a valid city.</div>
+          </div>
+          <div class="col-md-4">
+            <label for="validationCustom04" class="form-label"
+              >Business Type</label
+            >
+            <select class="form-select" id="validationCustom04" required>
+              <option selected disabled value="">Choose...</option>
+              <option value="">Manufactures/ Factory-Direct Suppliers</option>
+              <option value="">Wholesale</option>
+              <option value="">Distribution</option>
+              <option value="">Niche and Speciality Suppliers</option>
+              <option value="">E-commerce market</option>
+              <option value="">Logistics and Service Providers</option>
+              <option value="">Co-operation</option>
+            </select>
+            <div class="invalid-feedback">Please select a valid type.</div>
+          </div>
+
+          <div class="next col-12">
+            <a href="supplier.html#ci"
+              ><i
+                class="fa-solid fa-arrow-right"
+                style="color: rgb(99, 97, 97)"
+              ></i
+            ></a>
+            <!-- <a href="supplier.html#ci" class="bg-secondary">Next</a> -->
+          </div>
+        </form>
+      </div>
+      <br />
+      <div>
+        <h2 id="ci">Contact Information</h2>
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="inputname" class="form-label"
+              >Contact Person Name*</label
+            >
+            <input type="text" class="form-control" id="inputname" required />
+          </div>
+          <div class="col-md-6">
+            <label for="inputtitle" class="form-label">Position / Title*</label>
+            <input type="text" class="form-control" id="inputtitle" required />
+          </div>
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Email Address*</label>
+            <input
+              type="email"
+              class="form-control"
+              id="inputEmail4"
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="inputcontact" class="form-label">Phone Number*</label>
+            <input
+              type="password"
+              class="form-control"
+              id="inputcontact"
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="inputcontact2" class="form-label"
+              >Alternate Phone Number</label
+            >
+            <input type="password" class="form-control" id="inputcontact2" />
+          </div>
+
+          <div class="next two">
+            <a href="supplier.html#you"
+              ><i
+                class="fa-solid fa-arrow-left"
+                style="color: rgb(99, 97, 97)"
+              ></i
+            ></a>
+            <a href="supplier.html#ba"
+              ><i
+                class="fa-solid fa-arrow-right"
+                style="color: rgb(99, 97, 97)"
+              ></i
+            ></a>
+          </div>
+        </form>
+      </div>
+
+      <div>
+        <h2 id="ba">Business Address</h2>
+        <form class="row g-3">
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">Street Address*</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputAddress"
+              placeholder="1234 Main St"
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">City*</label>
+            <input type="text" class="form-control" id="inputCity" required />
+          </div>
+          <div class="col-md-4">
+            <label for="inputState" class="form-label"
+              >State / Pronvince*</label
+            >
+            <input type="text" id="inputState" class="form-control" required />
+          </div>
+          <div class="col-md-2">
+            <label for="inputZip" class="form-label">Postal / ZIP Code*</label>
+            <input type="text" class="form-control" id="inputZip" required />
+          </div>
+          <div class="col-md-6">
+            <label for="inputState" class="form-label">Country</label>
+            <select id="inputState" class="form-select">
+              <option selected>Choose...</option>
+              <option>Afghanistan</option>
+              <option>Albania</option>
+              <option>Algeria</option>
+              <option>Andorra</option>
+              <option>Angola</option>
+              <option>Antigua and Barbuda</option>
+              <option>Argentina</option>
+              <option>Armenia</option>
+              <option>Australia</option>
+              <option>Austria</option>
+              <option>Azerbaijan</option>
+              <option>Bahamas</option>
+              <option>Bahrain</option>
+              <option>Bangladesh</option>
+              <option>Barbados</option>
+              <option>Belarus</option>
+              <option>Belgium</option>
+              <option>Belize</option>
+              <option>Benin</option>
+              <option>Bhutan</option>
+              <option>Bolivia</option>
+              <option>Bosnia and Herzegovina</option>
+              <option>Botswana</option>
+              <option>Brazil</option>
+              <option>Brunei</option>
+              <option>Bulgaria</option>
+              <option>Burkina Faso</option>
+              <option>Burundi</option>
+              <option>Cabo Verde</option>
+              <option>Cambodia</option>
+              <option>Cameroon</option>
+              <option>Canada</option>
+              <option>Central African Republic</option>
+              <option>Chad</option>
+              <option>Chile</option>
+              <option>China</option>
+              <option>Colombia</option>
+              <option>Comoros</option>
+              <option>Republic of the Congo</option>
+              <option>Costa Rica</option>
+              <option>Côte d’Ivoire</option>
+              <option>Croatia</option>
+              <option>Cuba</option>
+              <option>Cyprus</option>
+              <option>Czechia</option>
+              <option>Democratic Republic of the Congo</option>
+              <option>Denmark</option>
+              <option>Djibouti</option>
+              <option>Dominica</option>
+              <option>Dominican Republic</option>
+              <option>Ecuador</option>
+              <option>Egypt</option>
+              <option>El Salvador</option>
+              <option>Equatorial Guinea</option>
+              <option>Eritrea</option>
+              <option>Estonia</option>
+              <option>Eswatini</option>
+              <option>Ethiopia</option>
+              <option>Fiji</option>
+              <option>Finland</option>
+              <option>France</option>
+              <option>Gabon</option>
+              <option>Gambia</option>
+              <option>Georgia</option>
+              <option>Germany</option>
+              <option>Ghana</option>
+              <option>Greece</option>
+              <option>Grenada</option>
+              <option>Guatemala</option>
+              <option>Guinea</option>
+              <option>Guinea-Bissau</option>
+              <option>Guyana</option>
+              <option>Haiti</option>
+              <option>Honduras</option>
+              <option>Hungary</option>
+              <option>Iceland</option>
+              <option>India</option>
+              <option>Indonesia</option>
+              <option>Iran</option>
+              <option>Iraq</option>
+              <option>Ireland</option>
+              <option>Israel</option>
+              <option>Italy</option>
+              <option>Jamaica</option>
+              <option>Japan</option>
+              <option>Jordan</option>
+              <option>Kazakhstan</option>
+              <option>Kenya</option>
+              <option>Kiribati</option>
+              <option>Kuwait</option>
+              <option>Kyrgyzstan</option>
+              <option>Laos</option>
+              <option>Latvia</option>
+              <option>Lebanon</option>
+              <option>Lesotho</option>
+              <option>Liberia</option>
+              <option>Libya</option>
+              <option>Liechtenstein</option>
+              <option>Lithuania</option>
+              <option>Luxembourg</option>
+              <option>Madagascar</option>
+              <option>Malawi</option>
+              <option>Malaysia</option>
+              <option>Maldives</option>
+              <option>Mali</option>
+              <option>Malta</option>
+              <option>Marshall Islands</option>
+              <option>Mauritania</option>
+              <option>Mauritius</option>
+              <option>Mexico</option>
+              <option>Micronesia</option>
+              <option>Moldova</option>
+              <option>Monaco</option>
+              <option>Mongolia</option>
+              <option>Montenegro</option>
+              <option>Morocco</option>
+              <option>Mozambique</option>
+              <option>Myanmar</option>
+              <option>Namibia</option>
+              <option>Nauru</option>
+              <option>Nepal</option>
+              <option>Netherlands</option>
+              <option>New Zealand</option>
+              <option>Nicaragua</option>
+              <option>Niger</option>
+              <option>Nigeria</option>
+              <option>North Korea</option>
+              <option>North Macedonia</option>
+              <option>Norway</option>
+              <option>Oman</option>
+              <option>Pakistan</option>
+              <option>Palau</option>
+              <option>Panama</option>
+              <option>Papua New Guinea</option>
+              <option>Paraguay</option>
+              <option>Peru</option>
+              <option>Philippines</option>
+              <option>Poland</option>
+              <option>Portugal</option>
+              <option>Qatar</option>
+              <option>Romania</option>
+              <option>Russia</option>
+              <option>Rwanda</option>
+              <option>Saint Kitts and Nevis</option>
+              <option>Saint Lucia</option>
+              <option>Saint Vincent and the Grenadines</option>
+              <option>Samoa</option>
+              <option>San Marino</option>
+              <option>Sao Tome and Principe</option>
+              <option>Saudi Arabia</option>
+              <option>Senegal</option>
+              <option>Serbia</option>
+              <option>Seychelles</option>
+              <option>Sierra Leone</option>
+              <option>Singapore</option>
+              <option>Slovakia</option>
+              <option>Slovenia</option>
+              <option>Solomon Islands</option>
+              <option>Somalia</option>
+              <option>South Africa</option>
+              <option>South Korea</option>
+              <option>South Sudan</option>
+              <option>Spain</option>
+              <option>Sri Lanka</option>
+              <option>Sudan</option>
+              <option>Suriname</option>
+              <option>Sweden</option>
+              <option>Switzerland</option>
+              <option>Syria</option>
+              <option>Tajikistan</option>
+              <option>Tanzania</option>
+              <option>Thailand</option>
+              <option>Timor-Leste</option>
+              <option>Togo</option>
+              <option>Tonga</option>
+              <option>Trinidad and Tobago</option>
+              <option>Tunisia</option>
+              <option>Turkey</option>
+              <option>Turkmenistan</option>
+              <option>Tuvalu</option>
+              <option>Uganda</option>
+              <option>Ukraine</option>
+              <option>United Arab Emirates</option>
+              <option>United Kingdom</option>
+              <option>United States</option>
+              <option>Uruguay</option>
+              <option>Uzbekistan</option>
+              <option>Vanuatu</option>
+              <option>Vatican City</option>
+              <option>Venezuela</option>
+              <option>Vietnam</option>
+              <option>Yemen</option>
+              <option>Zambia</option>
+              <option>Zimbabwe</option>
+            </select>
+          </div>
+
+          <div class="next two">
+            <a href="supplier.html#ci"
+              ><i
+                class="fa-solid fa-arrow-left"
+                style="color: rgb(99, 97, 97)"
+              ></i
+            ></a>
+            <a href="supplier.html#bd"
+              ><i
+                class="fa-solid fa-arrow-right"
+                style="color: rgb(99, 97, 97)"
+              ></i
+            ></a>
+          </div>
+        </form>
+      </div>
+      <div>
+        <h2 id="bd">Business Details</h2>
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="inputState" class="form-label"
+              >Business Category*</label
+            >
+            <select id="inputState" class="form-select">
+              <option selected>Choose...</option>
+              <option>Manufacturing</option>
+              <option>Wholesale / Distribution</option>
+              <option>Services</option>
+              <option><a href="">Other</a></option>
+              required
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label for="inputState" class="form-label"
+              >Number of Employees*</label
+            >
+            <select id="inputState" class="form-select">
+              <option selected>Select range</option>
+              <option>1 to 50</option>
+              <option>50 to 100</option>
+              <option>100 to 200</option>
+              <option>200+</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Products / Services Offered*</label
+            >
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+              placeholder="Describe the products or services you provide...."
+              required
+            ></textarea>
+          </div>
+          <div class="col-md-6">
+            <label for="inputState" class="form-label"
+              >Annual Revenue(Ushs.)</label
+            >
+            <select id="inputState" class="form-select">
+              <option selected>Select range</option>
+              <option>0-100,000 (Ushs.)</option>
+              <option>100,000-1,000,000 (Ushs)</option>
+              <option>1,000,000-10,000,000 (Ushs)</option>
+              <option>Above 10,000,000(Ushs)</option>
+            </select>
+          </div>
+          <!-- <label for="website">Website</label>
+          <input
+            type="url"
+            id="website"
+            name="website"
+            placeholder="https://example.com"
+          /> -->
+          <div class="col-md-6">
+            <label for="website" class="form-label">Website</label>
+            <input
+              type="url"
+              class="form-control"
+              id="website"
+              placeholder="https://example.com"
+              required
+            />
+          </div>
+          <div class="next two">
+            <a href="supplier.html#ba"
+              ><i
+                class="fa-solid fa-arrow-left"
+                style="color: rgb(99, 97, 97)"
+              ></i
+            ></a>
+            <a href="supplier.html#bank"
+              ><i
+                class="fa-solid fa-arrow-right"
+                style="color: rgb(99, 97, 97)"
+              ></i
+            ></a>
+          </div>
+        </form>
+      </div>
+      <div>
+        <h2 id="bank">Banking Information</h2>
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="inputbank" class="form-label">Bank Name*</label>
+            <input type="text" class="form-control" id="inputbank" required />
+          </div>
+          <div class="col-md-6">
+            <label for="inputState" class="form-label">Account Type*</label>
+            <select id="inputState" class="form-select">
+              <option selected>Select account type</option>
+              <option>Checking</option>
+              <option>Savings</option>
+              <option>Business</option>
+              required
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label for="inputaccnumber" class="form-label"
+              >Account Number*</label
+            >
+            <input type="text" class="form-control" id="inputaccnumber" />
+          </div>
+          <div class="col-md-6">
+            <label for="inputrouting" class="form-label">Routing Number*</label>
+            <input type="text" class="form-control" id="inputrouting" />
+          </div>
+          <div class="next two">
+            <a href="supplier.html#bd"
+              ><i
+                class="fa-solid fa-arrow-left"
+                style="color: rgb(99, 97, 97)"
+              ></i
+            ></a>
+            <a href="supplier.html#ai"
+              ><i
+                class="fa-solid fa-arrow-right"
+                style="color: rgb(99, 97, 97)"
+              ></i
+            ></a>
+          </div>
+        </form>
+      </div>
+      <div>
+        <h2 id="ai">Additional Information</h2>
+        <hr />
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Certifications and Licences</label
+          >
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+            placeholder="List any relevant certifications or licences...."
+          ></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Business References</label
+          >
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+            placeholder="Provide contact information for 2-3 business references..."
+          ></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Additional Notes</label
+          >
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+            placeholder="Any other information you'd like to share..."
+          ></textarea>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="invalidCheck"
+            required
+          />
+          <label class="form-check-label" for="invalidCheck">
+            Agree to terms and conditions
+          </label>
+          <div class="invalid-feedback">You must agree before submitting.</div>
+        </div>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-outline-success" type="submit">
+          Submit form
+        </button>
+        <button class="btn btn-outline-danger" type="reset">Cancel</button>
+      </div>
+    </div>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (() => {
+        "use strict";
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll(".needs-validation");
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach((form) => {
+          form.addEventListener(
+            "submit",
+            (event) => {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+
+              form.classList.add("was-validated");
+            },
+            false,
+          );
+        });
+      })();
+    </script>
+  </body>
+</html>
