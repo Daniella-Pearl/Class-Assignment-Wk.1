@@ -5,8 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MY PROFILE PAGE</title>
   </head>
+  <style>
+    .nav {
+      display: flex;
+      gap:20px;
+      justify-content: center;
+    }
+    .navy li{
+      list-style: none;
+    }
+    .navy a{
+      text-decoration: none;
+      color:white;
+      font-weight: bolder;
+      border:1px solid rgb(20, 20, 20);
+      padding:10px;
+      background-color: black;
+    }
+    .navy a:hover{
+      background-color: limegreen;
+      color:black;
+    }
+  </style>
   <body>
-    <button><a href="./salesreg.html">Link to My New Work</a></button>
+    <div class="navy">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Profile Page</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./salesreg.html">Sales Reg</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./images/supplier.html">Supplier Reg</a>
+        </li>
+      </ul>
+    </div>
     <h1>NASSUUNA PEARL DANIELLA</h1>
     <h4>Introduction</h4>
     <p>
@@ -82,8 +116,9 @@
         /><br /><br />
         <button type="button">Submit</button>
       </form>
-      <br><hr><br>
-       <button><a href="./salesreg.html">Link to My New Work</a></button>
+      <br />
+      <hr />
+      <br />
     </div>
   </body>
 </html>

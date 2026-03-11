@@ -11817,3 +11817,24 @@ button{
     margin-top: 30px;
     margin-right: 20px;
 }
+.nav {
+      display: flex;
+      gap:20px;
+      justify-content: center;
+    }
+    .navy li{
+      list-style: none;
+      margin-bottom: 20px;
+    }
+    .navy a{
+      text-decoration: none;
+      color:white;
+      font-weight: bolder;
+      border:1px solid rgb(20, 20, 20);
+      padding:10px;
+      background-color: black;
+    }
+    .navy a:hover{
+      background-color: limegreen;
+      color:black;
+    }
