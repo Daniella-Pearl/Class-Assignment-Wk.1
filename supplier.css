@@ -11802,39 +11802,104 @@ fieldset:disabled .btn {
   color: white;
   text-decoration: none;
 }
-.next{
-    margin-bottom: 40px;
+.next {
+  margin-bottom: 40px;
 }
-.two{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
+.two {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-body{
-background-color: rgba(202, 202, 202, 0.881);
+body {
+  background-color: rgba(202, 202, 202, 0.881);
 }
-button{
-    margin-top: 30px;
-    margin-right: 20px;
+button {
+  margin-top: 30px;
+  margin-right: 20px;
 }
 .nav {
-      display: flex;
-      gap:20px;
-      justify-content: center;
-    }
-    .navy li{
-      list-style: none;
-      margin-bottom: 20px;
-    }
-    .navy a{
-      text-decoration: none;
-      color:white;
-      font-weight: bolder;
-      border:1px solid rgb(20, 20, 20);
-      padding:10px;
-      background-color: black;
-    }
-    .navy a:hover{
-      background-color: limegreen;
-      color:black;
-    }
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.navy li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+.navy a {
+  text-decoration: none;
+  color: white !important;
+  font-weight: bolder;
+  border: 1px solid rgb(20, 20, 20);
+  padding: 10px;
+  background-color: black;
+}
+.navy a:hover {
+  background-color: limegreen;
+  color: black;
+}
+
+.nav li a:hover{
+  color: white !important;
+  font-weight: bolder;
+}
+.nav li a{
+  color: white !important;
+}
+.nav-link:hover {
+  background: linear-gradient(
+    to right,
+    rgb(20, 18, 18),
+    rgb(206, 64, 206),
+    rgb(225, 97, 187),
+    rgb(206, 64, 206),
+    rgb(20, 18, 18)
+  );
+  border-radius: 7px;
+
+}
+
+#signature-pad {
+  border: 2px solid #333;
+  width: 400px;
+  height: 200px;
+  cursor: crosshair;
+}
+
+.signature-buttons {
+  margin-top: 10px;
+}
+.sidebar {
+  border: 2px solid black;
+  border-radius: 7px;
+  padding-top: 10%;
+  /* background: linear-gradient(to left, #444345, #f456e9) !important; */
+  background: linear-gradient(to right, #a340b7, #f3e9f3);
+}
+.mainb {
+  background: linear-gradient(to left, #a340b7, #f3e9f3);
+  border: 2px solid black;
+  padding: 5%;
+  border-radius: 7px;
+  box-shadow: 2px 0px 30px rgba(0, 0, 0, 0.8);
+}
+#signature-pad {
+  cursor: pointer;
+}
+.container-fluid {
+  /* border:2px solid black; */
+  /* border-radius: 9px; */
+  /* padding: 10px; */
+  /* margin: 5px; */
+  background: linear-gradient(150deg, #a340b7, #f3e9f3);
+}
+body {
+  /* width:100%; */
+  overflow-x: hidden;
+}
+h3 {
+  font-family: "Geneva";
+}
+h2 {
+  font-weight: bolder !important;
+}
